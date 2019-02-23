@@ -41,4 +41,24 @@ public final class AccountData {
                 "Email: " + email + '\n' +
                 "Balance: " + balance;
     }
+
+    public String toStringMessage() {
+        String printOut = "";
+        if (balance < 0.0){
+            printOut += "\n ACCOUNT IS OVERDRAWN BY " + (String.format("%.2f", -balance));
+        }
+        return printOut;
+    }
+
+    public String toStringAccountInfo() {
+        return "Account id: " + id +
+                " Name: " + name +
+                " Email: " + email + '\n';
+    }
+
+    public String toStringBalance() {
+        return "Balance: " + String.format("%.2f", balance);
+    }
 }
+
+

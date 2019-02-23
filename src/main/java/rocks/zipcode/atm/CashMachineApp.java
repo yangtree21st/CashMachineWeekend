@@ -1,5 +1,6 @@
 package rocks.zipcode.atm;
 
+import javafx.application.Application;
 import rocks.zipcode.atm.bank.Bank;
 import javafx.application.Application;
 import javafx.scene.Parent;
@@ -10,6 +11,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.scene.layout.FlowPane;
+
+import java.awt.*;
 
 /**
  * @author ZipCodeWilmington
